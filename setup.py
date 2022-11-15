@@ -8,14 +8,14 @@ def read_file(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name='mkdocs-img2figv2-plugin',
-    version='0.0.2',
+    name='mkdocs-img2figv3-plugin',
+    version='0.0.3',
     description='A MkDocs plugin that converts markdown encoded images into <figure> elements.',
 	long_description=read_file('README.md'),
     long_description_content_type='text/markdown',
     keywords='mkdocs python markdown',
-    url='https://github.com/jackiexiao/mkdocs-img2figv2-plugin',
-    author='Antonio Cambule & jackiexiao',
+    url='https://github.com/AnotherGroupChat/mkdocs-img2figv3-plugin',
+    author='Antonio Cambule & jackiexiao & dmad',
 	license='MIT',
 	python_requires='>=3.6',
     install_requires=[
@@ -24,7 +24,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'mkdocs.plugins': [
-            'img2figv2 = src:Image2FigurePlugin',
+            'img2figv3 = src:Image2FigurePlugin',
         ]
     }
 )
